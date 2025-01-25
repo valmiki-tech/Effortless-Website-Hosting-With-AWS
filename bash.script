@@ -1,20 +1,20 @@
-  1  cd
+    1  cd
     2  mkdir /Hostwebsite
     3  cd /Hostwebsite/
     4  ls
     5  yum update -y
     6  yum install httpd -y
-    7  yum install git -y
-    8  git --version
-    9  git init
-   10  git config  --global user.name saikumar
-   11  git config --global user.Email valmikisaikumar1231@gmail.com
-   12  git config --list
-   13  wget https://www.free-css.com/assets/files/free-css-templates/download/page287/cakezone.zip
-   14  unzip cakezone.zip
-   15  cp -rvf cake-shop-website-template/* /var/www/html/
-   16  ls
-   17  rm cakezone.zip
+    7  systemctl start httpd
+    8  systemctl enable httpd
+    9  yum install git -y
+   10  git --version
+   11  git init
+   12  git config  --global user.name saikumar
+   13  git config --global user.Email valmikisaikumar1231@gmail.com
+   14  git config --list
+   15  wget https://www.free-css.com/assets/files/free-css-templates/download/page287/cakezone.zip
+   16  unzip cakezone.zip
+   17  cp -rvf cake-shop-website-template/* /var/www/html/
    18  ls
    19  rm -rvf cakezone.zip
    20  git add .
